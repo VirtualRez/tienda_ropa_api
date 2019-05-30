@@ -15,7 +15,6 @@ var jwtClave = JSON.parse(jwtClaveRaw); //el que quiera usarlo tiene que crear u
 //console.log(jwtClave['jwt_key']); //compruebo sii funciona
 
 //Puerto
-const puerto = process.argv[2];
 
 //Crear la variable de la api
 const app = express(); //ésto es expressJS
@@ -124,5 +123,5 @@ app.post('/products/', function(req, res) { //petición añadir un producto por 
 
 
 //escuchar en un puerto
-console.log(`escuchando en el puerto ${puerto}`.green);
-app.listen(puerto);
+console.log(`escuchando en el puerto 3000');
+app.listen(3000);
